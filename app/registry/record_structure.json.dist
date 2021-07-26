@@ -1,0 +1,24 @@
+{
+    "certificate_data": {
+        "certificate": "base64 cert string",
+        "fingerprint": "sha 256 cert fingerprint",
+        "issuerDN": "CN= , OU= , O= , C=",
+        "subjectDN": "GIVENNAME= , SERIALNUMBER= , CN= , C=",
+        "subjectEmail": "aitor_tilla@gmail.com"
+    },
+    "date": "mm_dd_yyyy__hh_mm_ss",
+    "docHash": "hash of signed document metadata (null if authentication)",
+    "record_data": {
+        "action": "authenticate/sign",
+        "base64Doc": "base 64 signed document metadata string (null if authentication)",
+        "certFingerprint": "sha 256 cert fingerprint",
+        "fileId" : "hex string of length 30 that identifies signed document (null if authentication)",
+        "origin": "https://some.uri",
+        "platform": "machine",
+        "publicIp": "x.y.z.t",
+        "status": "Python native app success (normally)",
+        "subjectEmail": "aitor_tilla@gmail.com",
+        "tokenNonce": "nonce in the jwt auth token/hash ofthe signed document metadata (works as record id)"
+    }
+    "signature" : "base 64 signature string"
+}
